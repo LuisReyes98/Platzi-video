@@ -1,0 +1,32 @@
+check the ATTR{idVendor}
+https://developer.android.com/studio/run/device?hl=es-419
+
+put the phone in developer mode 
+
+connect phone to computer and activate debugging
+
+
+#this will list the connected devices
+adb devices
+
+
+#get my ip 
+ifconfig
+
+##Recargar desde consola 
+adb shell input text "RR"
+
+##Abrir equipo consola de desarrollo
+adb shell input keyevent 82
+
+##Para setearlo que no haga falta estar conectado a la misma red wifi y se transfieran los datos por que esta conectado
+adb reverse tcp:8081 tcp:8081
+
+
+##Notes to self , 
+-dont download the warning the dependencies that npm says your project needs
+-Use yarn instead of npm 
+
+NEVER use react-native link
+
+ALWAYS mannually install external packages
